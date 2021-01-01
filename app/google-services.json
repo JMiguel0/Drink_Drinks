@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "320482526174",
+    "firebase_url": "https://drink-drinks-c3fd3-default-rtdb.firebaseio.com",
+    "project_id": "drink-drinks-c3fd3",
+    "storage_bucket": "drink-drinks-c3fd3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:320482526174:android:0addc30868fd419b5d534f",
+        "android_client_info": {
+          "package_name": "com.example.movl_proyectofinal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "320482526174-m3oal41k3io5qe41g71u8pd3iknubu9j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARWanYL7qmIMISLDvAXfWpdTQ5uE5AnK8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "320482526174-m3oal41k3io5qe41g71u8pd3iknubu9j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

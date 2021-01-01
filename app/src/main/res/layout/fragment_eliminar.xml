@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.eliminar.EliminarFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_eliminar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/eliminar"
+                android:textSize="30sp"
+                />
+
+            <ImageView
+                android:id="@+id/iVFotoNP"
+                android:layout_width="196dp"
+                android:layout_height="171dp"
+                android:contentDescription="@string/todo"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/ic_menu_camera" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="245dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/idp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tIEtIDEL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btnBuscarEL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/buscar"
+                    android:textSize="18sp">
+
+                </Button>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tVAreapEL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/areap"
+                android:textSize="30sp"
+                />
+
+            <TextView
+                android:id="@+id/tVDrpEL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Drp"
+                android:textSize="30sp"
+                />
+
+            <TextView
+                android:id="@+id/tVNombrepEL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nombrep"
+                android:textSize="30sp"
+                />
+
+            <TextView
+                android:id="@+id/tVGeneropEL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/genero"
+                android:textSize="30sp"
+                />
+
+            <TextView
+                android:id="@+id/tVFechapEL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fechap"
+                android:textSize="30sp"
+                />
+
+            <TextView
+                android:id="@+id/tVEdadpEL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/edadp"
+                android:textSize="30sp"
+                />
+
+            <TextView
+                android:id="@+id/tVEstaturapEL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/estaturap"
+                android:textSize="30sp"
+                />
+
+            <TextView
+                android:id="@+id/tVPesopEL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pesop"
+                android:textSize="30sp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnLimpiarEL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/limpiar"
+                    android:textSize="18sp">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/btnEliminar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/eliminar"
+                    android:textSize="18sp">
+
+                </Button>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</FrameLayout>

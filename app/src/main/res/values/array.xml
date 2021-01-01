@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sx">
+        <item>Seleccione genero</item>
+        <item>Masculino</item>
+        <item>Femenino</item>
+    </string-array>
+
+
+    <string-array name="opciones">
+        <item>Seleccione area medica</item>
+        <item>Neurologia</item>
+        <item>Traumatologia</item>
+        <item>Cardiologia</item>
+        <item>Cirugia general</item>
+    </string-array>
+
+    <string-array name="o0">
+        <item>No se ha seleccionado area</item>
+    </string-array>
+
+    <string-array name="o1">
+        <item>Selecione medico</item>
+        <item>Dr 1</item>
+        <item>Dr 2</item>
+        <item>Dr 3</item>
+    </string-array>
+
+    <string-array name="o2">
+        <item>Selecione medico</item>
+        <item>Dr 4</item>
+        <item>Dr 5</item>
+        <item>Dr 6</item>
+    </string-array>
+
+    <string-array name="o3">
+        <item>Selecione medico</item>
+        <item>Dr 7</item>
+        <item>Dr 8</item>
+        <item>Dr 9</item>
+    </string-array>
+
+    <string-array name="o4">
+        <item>Selecione medico</item>
+        <item>Dr 10</item>
+        <item>Dr 11</item>
+        <item>Dr 12</item>
+    </string-array>
+
+
+
+</resources>
