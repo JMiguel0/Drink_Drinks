@@ -8,39 +8,40 @@
     <string name="action_settings">Settings</string>
 
     <string name="menu_home">Inicio</string>
-    <string name="menu_crear">Crear</string>
-    <string name="menu_editar">Editar</string>
-    <string name="menu_eliminar">Eliminar</string>
+    <string name="menu_crear">Nuevo vendedor</string>
+    <string name="menu_editar">Editar vendedor</string>
+    <string name="menu_eliminar">Eliminar vendedor</string>
     <string name="menu_creditos">Creditos</string>
-    <string name="menu_listar">Listar</string>
+    <string name="menu_listar">Vendedores</string>
 
-    <string name="nuevo">Nuevo Paciente</string>
+    <string name="nuevo">Nuevo Vendedor</string>
     <string name="idp">ID</string>
     <string name="nombrep">Nombre</string>
     <string name="fechap">Fecha Ingreso</string>
-    <string name="edadp">Edad</string>
-    <string name="estaturap">Estatura</string>
-    <string name="pesop">Peso</string>
+    <string name="edadp">Correo</string>
+    <string name="estaturap">Sueldo mensual</string>
+    <string name="pesop">Contraseña</string>
     <string name="limpiar">Limpiar</string>
     <string name="guardar">Guardar</string>
     <string name="buscar">Buscar</string>
-    <string name="todo">Img_Paciente</string>
-
-    <string name="editar">Editar Paciente</string>
-    <string name="eliminar">Eliminar Paciente</string>
-    <string name="listar">Listar Pacientes</string>
+    <string name="todo">Img_Vendedor</string>
+    <string name="editar">Editar Vendedor</string>
+    <string name="eliminar">Eliminar Vendedor</string>
+    <string name="listar">Lista de Vendedores</string>
+    <string name="iniciar">Iniciar sesión</string>
+    <string name="correo">Correo</string>
+    <string name="contra">Contraseña</string>
 
     <string name="creditos">Acerca de</string>
     <string name="univer">Instituto Tecnologico de Toluca</string>
     <string name="especialidad">Ingenieria en Sistemas Computacionales</string>
-    <string name="alumno">Nombre del Alumno</string>
-    <string name="materia">Materia Desarrollo Movil</string>
+    <string name="alumno">Drink Drinks</string>
+    <string name="materia">Materia: Desarrollo Movil</string>
     <string name="profesro">Profesora M:C: Rocio Elizabeth Pulido Alba</string>
     <string name="clase">Clase Lun Mier Viernes 2020</string>
-    <string name="version">Version 1.0</string>
 
-    <string name="areap">Area</string>
-    <string name="Drp">Doctor</string>
+    <string name="areap">Zona</string>
+    <string name="Drp">Sucursal</string>
     <string name="genero">Genero</string>
 
 </resources>

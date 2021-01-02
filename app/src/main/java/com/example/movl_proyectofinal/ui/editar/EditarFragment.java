@@ -95,18 +95,18 @@ public class EditarFragment extends Fragment implements AdapterView.OnItemSelect
                         if (snapshot.exists()){
                             String nombre = snapshot.child("nombre").getValue().toString();
                             String fechaIngreso = snapshot.child("fechaIngreso").getValue().toString();
-                            String edad = snapshot.child("edad").getValue().toString();
-                            String estatura = snapshot.child("estatura").getValue().toString();
-                            String peso = snapshot.child("peso").getValue().toString();
+                            String correo = snapshot.child("correo").getValue().toString();
+                            String sueldo = snapshot.child("sueldo").getValue().toString();
+                            String contra = snapshot.child("contrasenia").getValue().toString();
                             String s = snapshot.child("genero").getValue().toString();
                             String a = snapshot.child("area").getValue().toString();
-                            String d = snapshot.child("doc").getValue().toString();
+                            String d = snapshot.child("sucursal").getValue().toString();
 
                             txtNombre.setText(nombre);
                             txtFechaIngreso.setText(fechaIngreso);
-                            txtEdad.setText(edad);
-                            txtEstatura.setText(estatura);
-                            txtPeso.setText(peso);
+                            txtEdad.setText(correo);
+                            txtEstatura.setText(sueldo);
+                            txtPeso.setText(contra);
 
                             spnArea.setSelection(obtenerPosicion(spnArea, a));
                             spnDr.setSelection(obtenerPosicion(spnDr, d));
@@ -152,12 +152,12 @@ public class EditarFragment extends Fragment implements AdapterView.OnItemSelect
 
                         Map<String, Object> pacienteMap = new HashMap<>();
                         pacienteMap.put("nombre",txtNombre.getText().toString());
-                        pacienteMap.put("edad", txtEdad.getText().toString());
+                        pacienteMap.put("correo", txtEdad.getText().toString());
                         pacienteMap.put("fechaIngreso", txtFechaIngreso.getText().toString());
-                        pacienteMap.put("estatura", txtEstatura.getText().toString());
-                        pacienteMap.put("peso", txtPeso.getText().toString());
+                        pacienteMap.put("sueldo", txtEstatura.getText().toString());
+                        pacienteMap.put("contrasenia", txtPeso.getText().toString());
                         pacienteMap.put("area", a);
-                        pacienteMap.put("doc", d);
+                        pacienteMap.put("sucursal", d);
                         pacienteMap.put("genero", sex);
 
                         database.child("Paciente").child(txtId.getText().toString()).updateChildren(pacienteMap);
@@ -170,7 +170,7 @@ public class EditarFragment extends Fragment implements AdapterView.OnItemSelect
                     }
 
                 }else{
-                    Toast.makeText(getContext(), "Ingrese el identificador del paciente a editar", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getContext(), "Ingrese el identificador del vendedor a editar", Toast.LENGTH_LONG).show();
                     bnd = 0;
                 }
             }
@@ -182,14 +182,15 @@ public class EditarFragment extends Fragment implements AdapterView.OnItemSelect
                 if (bnd == 1){
                     c = Calendar.getInstance();
                     anio = c.get(Calendar.YEAR);
-                    mes = c.get(Calendar.MONTH);
+                    mes = c.get(Calendar.MONTH)+1;
                     dia = c.get(Calendar.DAY_OF_MONTH);
 
                     dpd = new DatePickerDialog(getContext(), (DatePickerDialog.OnDateSetListener) listener, anio, mes, dia);
                     dpd.show();
+                    txtFechaIngreso.setText(dia+" /"+mes+"/"+anio);
 
                 }else{
-                    Toast.makeText(getContext(), "Ingrese el identificador del paciente a editar", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getContext(), "Ingrese el identificador del vendedor a editar", Toast.LENGTH_LONG).show();
                     bnd = 0;
                 }
             }

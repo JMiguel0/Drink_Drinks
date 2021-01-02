@@ -8,43 +8,38 @@
 
 
     <string-array name="opciones">
-        <item>Seleccione area medica</item>
-        <item>Neurologia</item>
-        <item>Traumatologia</item>
-        <item>Cardiologia</item>
-        <item>Cirugia general</item>
+        <item>Seleccione zona</item>
+        <item>Toluca</item>
+        <item>Metepec</item>
+        <item>CDMX</item>
+        <item>Zinacantepec</item>
     </string-array>
 
     <string-array name="o0">
-        <item>No se ha seleccionado area</item>
+        <item>Seleccione zona</item>
     </string-array>
 
     <string-array name="o1">
-        <item>Selecione medico</item>
-        <item>Dr 1</item>
-        <item>Dr 2</item>
-        <item>Dr 3</item>
+        <item>Selecione Sucursal</item>
+        <item>Felipe Villanueva</item>
+        <item>Las américas</item>
     </string-array>
 
     <string-array name="o2">
-        <item>Selecione medico</item>
-        <item>Dr 4</item>
-        <item>Dr 5</item>
-        <item>Dr 6</item>
+        <item>Selecione Sucursal</item>
+        <item>Junto a provincia</item>
+        <item>Centro</item>
     </string-array>
 
     <string-array name="o3">
-        <item>Selecione medico</item>
-        <item>Dr 7</item>
-        <item>Dr 8</item>
-        <item>Dr 9</item>
+        <item>Selecione Sucursal</item>
+        <item>Terminal</item>
     </string-array>
 
     <string-array name="o4">
-        <item>Selecione medico</item>
-        <item>Dr 10</item>
-        <item>Dr 11</item>
-        <item>Dr 12</item>
+        <item>Selecione Sucursal</item>
+        <item>El puente</item>
+        <item>Centro</item>
     </string-array>
 
 

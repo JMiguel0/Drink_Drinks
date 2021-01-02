@@ -60,11 +60,21 @@ public class ListarFragment extends Fragment {
              aux = Integer.toString(i);
             System.out.println(aux);
             database.child("Paciente").child(aux).addValueEventListener(new ValueEventListener() {
+
                 @Override
                 public void onDataChange(@NonNull DataSnapshot snapshot) {
                     if (snapshot.exists()){
                         String nombre = snapshot.child("nombre").getValue().toString();
-                        nombres.add(nombre);
+                        String sueldo = snapshot.child("sueldo").getValue().toString();
+                        String diaPaga = snapshot.child("fechaIngreso").getValue().toString();
+                        String area = snapshot.child("area").getValue().toString();
+                        String genero = snapshot.child("genero").getValue().toString();
+                        String correo = snapshot.child("correo").getValue().toString();
+                        String contrasenia = snapshot.child("contrasenia").getValue().toString();
+                        String sucursal = snapshot.child("sucursal").getValue().toString();
+                        String id = snapshot.getKey().toString();
+                        nombres.add("Id: "+id+" \nNombre: "+nombre+" \nSueldo mensual: $"+sueldo+" \nDía de paga: "+diaPaga.substring(0,2)
+                                +" \nArea: "+area+" \nSucursal: "+sucursal+" \nGenero: "+genero+" \nCorreo: "+correo+" \nContraseña: "+contrasenia);
                         list.setAdapter(adapter);
                     }
                 }

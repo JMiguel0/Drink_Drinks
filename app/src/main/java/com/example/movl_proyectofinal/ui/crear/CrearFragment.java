@@ -103,12 +103,12 @@ public class CrearFragment extends Fragment implements DatePickerDialog.OnDateSe
                     Map<String, Object> datosPaciente = new HashMap<>();
 
                     datosPaciente.put("nombre", txtNombre.getText().toString());
-                    datosPaciente.put("edad", txtEdad.getText().toString());
+                    datosPaciente.put("correo", txtEdad.getText().toString());
                     datosPaciente.put("fechaIngreso", txtFechaIngreso.getText().toString());
-                    datosPaciente.put("estatura", txtEstatura.getText().toString());
-                    datosPaciente.put("peso", txtPeso.getText().toString());
+                    datosPaciente.put("sueldo", txtEstatura.getText().toString());
+                    datosPaciente.put("contrasenia", txtPeso.getText().toString());
                     datosPaciente.put("area", a);
-                    datosPaciente.put("doc", d);
+                    datosPaciente.put("sucursal", d);
                     datosPaciente.put("genero", sex);
 
                     database.child("Paciente").child(txtId.getText().toString()).setValue(datosPaciente);
@@ -148,12 +148,12 @@ public class CrearFragment extends Fragment implements DatePickerDialog.OnDateSe
             public void onClick(View view) {
                 c = Calendar.getInstance();
                 anio = c.get(Calendar.YEAR);
-                mes = c.get(Calendar.MONTH);
+                mes = c.get(Calendar.MONTH)+1;
                 dia = c.get(Calendar.DAY_OF_MONTH);
 
                 dpd = new DatePickerDialog(getContext(), listener, anio, mes, dia);
                 dpd.show();
-                txtFechaIngreso.setText(dia+"/"+mes+"/"+anio);
+                txtFechaIngreso.setText(dia+" /"+mes+"/"+anio);
             }
         });
 

@@ -86,20 +86,20 @@ private DatePickerDialog.OnDateSetListener listener;
                         if (snapshot.exists()){
                             String nombre = snapshot.child("nombre").getValue().toString();
                             String fechaIngreso = snapshot.child("fechaIngreso").getValue().toString();
-                            String edad = snapshot.child("edad").getValue().toString();
-                            String estatura = snapshot.child("estatura").getValue().toString();
-                            String peso = snapshot.child("peso").getValue().toString();
+                            String correo = snapshot.child("correo").getValue().toString();
+                            String sueldo = snapshot.child("sueldo").getValue().toString();
+                            String contra = snapshot.child("contrasenia").getValue().toString();
                             String s = snapshot.child("genero").getValue().toString();
                             String a = snapshot.child("area").getValue().toString();
-                            String d = snapshot.child("doc").getValue().toString();
+                            String d = snapshot.child("sucursal").getValue().toString();
 
                             txtNombre.setText("Nombre "+nombre);
                             txtFechaIngreso.setText("Fecha: "+fechaIngreso);
-                            txtEdad.setText("Edad: "+edad);
-                            txtEstatura.setText("Estatura: "+estatura);
-                            txtPeso.setText("Peso: "+peso);
+                            txtEdad.setText("Correo: "+correo);
+                            txtEstatura.setText("Sueldo: "+sueldo);
+                            txtPeso.setText("Contraseña: "+contra);
                             txtArea.setText("Área: "+a);
-                            txtDoc.setText("Doctor: "+d);
+                            txtDoc.setText("Sucursal: "+d);
                             txtSex.setText("Genero: "+s);
 
                         }
@@ -118,7 +118,7 @@ private DatePickerDialog.OnDateSetListener listener;
             public void onClick(View view) {
                 database.child("Paciente").child(txtId.getText().toString()).removeValue();
                 limpiar();
-                Toast.makeText(getContext(), "Paciente eliminado", Toast.LENGTH_LONG).show();
+                Toast.makeText(getContext(), "Vendedor eliminado", Toast.LENGTH_LONG).show();
             }
         });
 
@@ -135,14 +135,14 @@ private DatePickerDialog.OnDateSetListener listener;
 
     public void limpiar(){
         txtId.setText("");
-        txtPeso.setText("Peso: ");
-        txtEstatura.setText("Estatura: ");
-        txtEdad.setText("Edad: ");
+        txtPeso.setText("Contraseña: ");
+        txtEstatura.setText("Sueldo: ");
+        txtEdad.setText("Correo: ");
         txtFechaIngreso.setText("Fecha de ingreso: ");
         txtNombre.setText("Nombre: ");
         txtSex.setText("Genero: ");
         txtArea.setText("Área: ");
-        txtDoc.setText("Doctor: ");
+        txtDoc.setText("Sucursal: ");
 
 
         a = "";
