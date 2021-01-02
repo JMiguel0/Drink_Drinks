@@ -1,8 +1,10 @@
 package com.example.movl_proyectofinal;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
+import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
@@ -29,8 +31,9 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Intent intent = new Intent(view.getContext(), Login.class);
+                startActivity(intent);
+                Toast.makeText(view.getContext(), "Sesión cerrada", Toast.LENGTH_LONG).show();
             }
         });
         DrawerLayout drawer = findViewById(R.id.drawer_layout);

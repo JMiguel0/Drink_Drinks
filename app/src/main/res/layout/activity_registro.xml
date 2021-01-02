@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login">
+    tools:context=".Registro">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -12,10 +12,10 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/iniciar" />
+            android:text="@string/registro" />
 
         <EditText
             android:id="@+id/txtCorreo"
@@ -26,6 +26,14 @@
             android:inputType="textEmailAddress" />
 
         <EditText
+            android:id="@+id/txtNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/nombrep"
+            android:inputType="textPersonName" />
+
+        <EditText
             android:id="@+id/txtContra"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -33,16 +41,24 @@
             android:hint="@string/contra"
             android:inputType="textPassword" />
 
-        <Button
-            android:id="@+id/btn_iniciar"
+        <EditText
+            android:id="@+id/txtContra2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/iniciar" />
+            android:ems="10"
+            android:hint="@string/contra"
+            android:inputType="textPassword" />
 
         <Button
-            android:id="@+id/btn_registro"
+            android:id="@+id/btnRegistrarse"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/registro" />
+
+        <Button
+            android:id="@+id/btnVolver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/volver" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
