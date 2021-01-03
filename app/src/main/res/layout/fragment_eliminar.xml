@@ -20,17 +20,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="@string/eliminar"
-                android:textSize="30sp"
-                />
+                android:textSize="30sp" />
 
             <ImageView
                 android:id="@+id/iVFotoNP"
                 android:layout_width="196dp"
                 android:layout_height="171dp"
-                android:contentDescription="@string/todo"
                 android:layout_gravity="center"
-                app:srcCompat="@drawable/ic_menu_camera" />
+                android:contentDescription="@string/todo"
+                app:srcCompat="@drawable/ddlogo" />
 
             <LinearLayout
                 android:layout_width="match_parent"

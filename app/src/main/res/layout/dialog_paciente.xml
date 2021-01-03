@@ -23,9 +23,9 @@
             android:id="@+id/iVFotoDialogo"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:contentDescription="@string/todo"
             android:layout_gravity="center"
-            app:srcCompat="@drawable/ic_menu_camera" />
+            android:contentDescription="@string/todo"
+            app:srcCompat="@drawable/ddlogo" />
 
 
     </LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_vendedor_navigation"
+    app:startDestination="@+id/nav_ventas">
+
+    <fragment
+        android:id="@+id/nav_ventas"
+        android:name="com.example.movl_proyectofinal.vendedor.Ventas.Ventas"
+        android:label="@string/menu_vendedor_ventas"
+        tools:layout="@layout/fragment_ventas" />
+
+    <fragment
+        android:id="@+id/nav_vinos"
+        android:name="com.example.movl_proyectofinal.vendedor.Vinos.Vinos"
+        android:label="@string/menu_vendedor_vinos"
+        tools:layout="@layout/fragment_vinos" />
+
+    <fragment
+        android:id="@+id/nav_mermas"
+        android:name="com.example.movl_proyectofinal.vendedor.Mermas.Mermas"
+        android:label="@string/menu_vendedor_mermas"
+        tools:layout="@layout/fragment_mermas" />
+
+</navigation>

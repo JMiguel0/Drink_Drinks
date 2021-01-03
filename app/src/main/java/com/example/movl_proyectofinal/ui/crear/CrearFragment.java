@@ -174,7 +174,7 @@ public class CrearFragment extends Fragment implements DatePickerDialog.OnDateSe
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        mViewModel = ViewModelProviders.of(this).get(CrearViewModel.class);
+       // mViewModel = ViewModelProviders.of(this).get(CrearViewModel.class);
         // TODO: Use the ViewModel
     }
 

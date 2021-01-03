@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_ventas"
+            android:icon="@drawable/ic_menu_sell"
+            android:title="@string/menu_vendedor_ventas" />
+        <item
+            android:id="@+id/nav_vinos"
+            android:icon="@drawable/ic_menu_wine"
+            android:title="@string/menu_vendedor_vinos" />
+        <item
+            android:id="@+id/nav_mermas"
+            android:icon="@drawable/ic_menu_merma"
+            android:title="@string/menu_vendedor_mermas" />
+
+    </group>
+</menu>
