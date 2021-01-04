@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_ver"
+            android:icon="@drawable/ic_menu_wine"
+            android:title="@string/menu_clientes_ver" />
+        <item
+            android:id="@+id/nav_gps"
+            android:icon="@drawable/ic_menu_gps"
+            android:title="@string/menu_clientes_gps" />
+        <item
+            android:id="@+id/nav_info"
+            android:icon="@drawable/ic_menu_info"
+            android:title="@string/menu_clientes_info" />
+
+    </group>
+</menu>

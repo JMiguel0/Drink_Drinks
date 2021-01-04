@@ -60,9 +60,9 @@ public class Login extends AppCompatActivity {
                                     if (txtCorreo.getText().toString().equals(correo) && txtContra.getText().toString().equals(contra)){
                                         existe=true;
                                             Toast.makeText(view.getContext(), "Cliente inicio", Toast.LENGTH_SHORT).show();
-                                        limpiar();
-
-
+                                        Intent intent = new Intent(view.getContext(), Clientes.class);
+                                        startActivity(intent);
+                                            limpiar();
                                     }
                                 }/////
                                 database.child("Paciente").addValueEventListener(new ValueEventListener() {

@@ -7,6 +7,10 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
+
+    <string name="menu_clientes_info">Informacion</string>
+    <string name="menu_clientes_ver">Vinos</string>
+    <string name="menu_clientes_gps">¿Donde estamos?</string>
     <string name="menu_vendedor">Vendedor</string>
     <string name="menu_cliente">Bienvenido</string>
     <string name="menu_admin">Admin</string>
